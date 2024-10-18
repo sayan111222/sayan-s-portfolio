@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #70d6ff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 35px;
+    background-color: #1b263b;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    text-shadow: 0 0 39px blue;
+    transform: scale(1.1);
+}
+
+.navbar {
+    display: flex;
+    transition: 0.3s ease;
+}
+
+.navbar a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 25px;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #8ecae6;
+}
+
+.contact {
+    color: black;
+    font-weight: 600;
+    margin-left: 25px;
+    background-color: #9bbbf6;
+    padding: 3px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contact:hover {
+    box-shadow: 0 0 39px blue;
+}
+
+.contact:active {
+    transform: scale(0.98);
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #1b263b;
+        z-index: 50;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .navbar a {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Section Design */
+.gif-section {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.gif-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+#about1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#about1 span {
+    color: #0057fa;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Sayan</span> Mondal</a>
+        <nav class="navbar" id="navbar">
+            <a href="#">Portfolio</a>
+            <a href="#">Services</a>
+            <a href="#">Experience</a>
+            <a href="#">Projects</a>
+            <a href="#">Education</a>
+        </nav>
+        <a href="#" class="contact">Contact Me</a>
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <section class="firstsection">
+        <div class="gif-section">
+            <img src="Add-a-heading-unscreen.gif" alt="Your GIF Description">
+            <div id="about1">
+                Hey, my name is <span class="purple">Sayan</span>
+                <div>and I am passionate</div>
+                <span id="element"></span>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        // Typed.js animation
+        var typed = new Typed('#element', {
+            strings: ['Web developer😍', 'Loading🚀'],
+            typeSpeed: 50,
+        });
+
+        // Navbar Toggle Logic
+        const hamburger = document.getElementById("hamburger");
+        const navbar = document.getElementById("navbar");
+
+        hamburger.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+            hamburger.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
