@@ -4,11 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     background-color: #70d6ff;
-    font-family: 'Poppins', sans-serif;
+   
 }
 
 .header {
@@ -25,16 +26,20 @@ body {
     z-index: 100;
 }
 
+
 .logo {
     font-size: 25px;
     font-weight: 600;
-    color: white;
+    color: #0057fa;
     text-decoration: none;
     transition: 0.3s ease;
 }
+.logo  span{
+    color: white;
+}
 
 .logo:hover {
-    text-shadow: 0 0 39px blue;
+   
     transform: scale(1.1);
 }
 
@@ -56,24 +61,7 @@ body {
     color: #8ecae6;
 }
 
-.contact {
-    color: black;
-    font-weight: 600;
-    margin-left: 25px;
-    background-color: #9bbbf6;
-    padding: 3px 10px;
-    border-radius: 50px;
-    cursor: pointer;
-    text-decoration: none;
-}
 
-.contact:hover {
-    box-shadow: 0 0 39px blue;
-}
-
-.contact:active {
-    transform: scale(0.98);
-}
 
 /* Hamburger menu styles */
 .hamburger {
@@ -96,7 +84,7 @@ body {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 50px;
+        top: 58px;
         left: 0;
         width: 100%;
         background-color: #1b263b;
@@ -128,23 +116,29 @@ body {
         text-align: center;
     }
 }
-
-/* Section Design */
 .gif-section {
-    text-align: center;
+    display: flex;
+    justify-content: space-around; /* Distribute images evenly */
+    align-items: center; /* Align images vertically in the center */
     margin: 100px 0;
+    gap: 20px; /* Space between images */
+    margin-bottom: 20px;
 }
 
 .gif-section img {
-    max-width: 100%;
+    width: 20%; /* Adjust the size of each image */
+    max-width: 500px; /* Set maximum width */
     height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners */
 }
 
 #about1 {
     font-size: 30px;
     font-weight: 700;
+    text-align: center;
 }
 
 #about1 span {
     color: #0057fa;
+ 
 }
