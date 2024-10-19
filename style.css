@@ -133,9 +133,10 @@ body {
 }
 
 #about1 {
-    font-size: 30px;
+    font-size: 30px auto;
     font-weight: 700;
     text-align: center;
+    margin: 70px 20px;
 }
 
 #about1 span {
